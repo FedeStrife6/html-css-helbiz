@@ -1,0 +1,54 @@
+/* Regole */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: lightpink;
+}
+
+/* Fine Regole */
+.navbar-brand {
+  margin: 10px;
+  text-align:
+}
+.display li {
+  display: inline-block;
+  padding-left: 25px;
+
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.image-header {
+  background-image: url(../img/header-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text {
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}

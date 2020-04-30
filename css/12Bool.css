@@ -1,0 +1,54 @@
+/* INIZIO DEBUG */
+.debug .container {
+  border: 1px solid black;
+}
+.debug .col-1 {
+  border: 1px solid blue;
+  height: 200px;
+}
+.debug .col-2 {
+  border: 1px solid blue;
+  height: 200px;
+}
+.debug .col-6 {
+  border: 1px solid blue;
+  height: 200px;
+}
+.debug .col-12 {
+  border: 1px solid blue;
+  height: 500px;
+}
+
+.debug [class*="nasted"] {
+  background: #f07e80;
+  border: 1px solid white;
+  height: 280px;
+}
+/* FINE DEBUG */
+
+/* INIZIO FRAMEWORK */
+
+[class*="col-"] {
+  float:left;
+}
+
+.col-1 { width: calc( (100% / 12) * 1);}
+.col-2 { width: calc( (100% / 12) * 2);}
+.col-3 { width: calc( (100% / 12) * 3);}
+.col-4 { width: calc( (100% / 12) * 4);}
+.col-5 { width: calc( (100% / 12) * 5);}
+.col-6 { width: calc( (100% / 12) * 6);}
+.col-7 { width: calc( (100% / 12) * 7);}
+.col-8 { width: calc( (100% / 12) * 8);}
+.col-9 { width: calc( (100% / 12) * 9);}
+.col-10 { width: calc( (100% / 12) * 10);}
+.col-11 { width: calc( (100% / 12) * 11);}
+.col-12 { width: calc( (100% / 12) * 12);}
+
+/* Offset */
+
+.offset-6 { /*offset sono da scrivere semore tutti, o solo quelli che servono*/
+  margin left: calc( (100% / 12) * 6);
+}
+
+/* FINE FRAMEWORK */
