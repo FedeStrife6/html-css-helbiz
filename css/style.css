@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
@@ -18,13 +17,11 @@ body {
   display: block;
   text-decoration: none;
 }
-
 .container::after {
   content: "";
   display: table;
   clear: both;
 }
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -50,6 +47,10 @@ header .container .menu {
   text-align: center;
   height: 50px;
 }
+header .container .menu-lang {
+  text-align: right;
+}
+
 header .container .col-menu-center ul li a {
   display: inline-block;
   text-decoration: none;
@@ -68,26 +69,45 @@ header .container .col-menu-right ul li a {
   line-height: 60px;
   text-align: right;
 }
-header .col-12 img {
-  width: 100%;
+.menu {
+  padding-left: 200px;
 }
-header .h1-home {
-  left: 50%;
+.menu-lang {
+  padding-left: 100px;
+}
+.menu-lang  li a {
+  border-right:  1px solid #333;
+}
+.menu-lang li:last-child a {
+  border-right: none;
+}
+.jumbotron {
+  background-image: url(../img/header-jmb.jpg);
+  background-size: cover;
+  height: 650px;
+  position: relative;
+  width: 100vw;
+}
+.teaser {
+  position: absolute;
   top: 50%;
-  transform: translate(-50%; -50%);
-  color: white;
-}
-header .col-12 p {
   left: 50%;
-  top: 50%;
-  transform: translate(-50%; -50%);
-  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
 }
-
+header .jumbotron .teaser h1 {
+  font-size: 3em;
+  margin-bottom: 13px;
+  text-transform: capitalize;
+}
+header .jumbotron .teaser p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
 /* FINE HEADER */
 
- /* MAIN */
-
+/* MAIN */
 main .container .logo {
   height: 100px;
   width: 100px;
@@ -98,16 +118,24 @@ main .container .logo {
   font-weight: 600;
   letter-spacing: 0;
 }
+
 main .container img {
   width: 100%;
 }
 main .container .content-item {
   margin: 70px 20px 70px ;
-  display: inline-block;
   width: 44%;
   height: 700px;
   background-color: #fff;
-  padding-top:30px;
+  padding: 70px 20px 40px;
+  display: inline-block;
+  text-align: center;
+}
+main .container .content-item {
+  background-color: #fafafa;
+  height: 700px;
+  width: 700px;
+
 }
 main .container .img-fluid {
   color: black;
@@ -116,22 +144,23 @@ main .container .img-fluid {
   width: 40%;
   padding: 5px;
   text-align: center;
-}
-main .container .content-item {
-  background-color: #fafafa;
-  height: 700px;
-  width: 700px;
   display: inline-block;
-  text-align: center;
+}
+main .container .img-fluid p {
+
+
 }
 main .container .content-item .item {
   margin: 50px;
   height: 400px;
   width: 400px;
 }
+.img-fluid a:hover {
+  text-decoration: underline;
+}
 
 
-
+/* FOOTER */
 footer .col-2 {
   background-color: purple;
 }
