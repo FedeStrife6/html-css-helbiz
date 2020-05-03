@@ -118,7 +118,6 @@ main .container .logo {
   font-weight: 600;
   letter-spacing: 0;
 }
-
 main .container img {
   width: 100%;
 }
@@ -133,34 +132,124 @@ main .container .content-item {
 }
 main .container .content-item {
   background-color: #fafafa;
-  height: 700px;
+  height: 600px;
   width: 700px;
-
+  margin: 60px;
 }
 main .container .img-fluid {
   color: black;
-  font-weight: 600;
-  letter-spacing: 0;
-  width: 40%;
+  width: 45%;
   padding: 5px;
-  text-align: center;
   display: inline-block;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-align: center;
 }
-main .container .img-fluid p {
+/* perchè il content-item destro ha un a carattere diverso??? */
 
-
+main .container .img-fluid a {
+  text-decoration: none;
 }
+
 main .container .content-item .item {
-  margin: 50px;
   height: 400px;
   width: 400px;
 }
-.img-fluid a:hover {
+main .container .img-fluid a:hover {
   text-decoration: underline;
+}
+main .phoneslide-top {
+  background-image: url(../img/HelbizBanner.jpg);
+  background-size: cover;
+  height: 450px;
+}
+main .phoneslide-top img {
+  display: block;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+}
+main .phoneslide-bottom {
+  margin-bottom: 10px;
+}
+main .phoneslide-bottom h2 {
+  font-size: 24px;
+}
+main .phoneslide-bottom-2 p {
+  padding: 0;
+  float: right;
+  /* ??? NON RIESCO A PORTARE QUESTA SCRITTA A DESTRA DEL TELEFONO */
+}
+.phoneslide-bottom-1,
+.phoneslide-bottom-2 {
+  padding: 80px;
+}
+main .phoneslide-bottom-2 {
+  vertical-align:right;
+  float:left;
+}
+main .wrapper-home {
+  max-width: 1040px;
+  margin: 40px auto;
+}
+main .box-content {
+  background-image: url(../img/ScooterHelbiz.jpg);
+  background-size: cover;
+  height: 400px;
+}
+main .box-content {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+main .box-content img {
+  display: inline-block;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+}
+main .container .content-item {
+  background-color: #fafafa;
+  height: 600px;
+  width: 700px;
+  margin: 60px;
+}
+main .container .img-fluid {
+  color: black;
+  width: 45%;
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+main .helbiz-family {
+  background-image: url(../img/Social-Banner.jpg);
+  background-size: cover;
+  height: 420px;
+  margin-bottom: 40px;
+}
+main .helbiz-family img {
+  display: inline-block;
+}
+main .white-center-box {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  position: relative;
 }
 
 
+
 /* FOOTER */
-footer .col-2 {
-  background-color: purple;
+footer .container-footer{
+  width: 500vh;
+  background-color: black;
 }
